@@ -167,7 +167,7 @@
 
 <div class="owner_message">临时停靠，请多关照!</div>
 
-<a href="'tel://15823885405'">
+<a href="javascript:call_phone('+15823885405+') ">
 
     <div class="phone">
         <div class="phone_icon">
@@ -193,6 +193,13 @@
     </div>
 
 </a>
+
+<script>
+    function call_phone(phone) {
+        window.location.href = 'tel://' + phone;
+    }
+
+</script>
 
 
 </body>
